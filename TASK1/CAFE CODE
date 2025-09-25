@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int priceEspresso = 200;
+    int priceLatte = 250;
+    int priceCappuccino = 300;
+
+    int qtyEspresso, qtyLatte, qtyCappuccino;
+
+    cout << "enter Espressos quantity:";
+    cin >> qtyEspresso;
+
+    cout << "enter Lattes quantity: ";
+    cin >> qtyLatte;
+
+    cout << "enter Cappuccinos quantity:";
+    cin >> qtyCappuccino;
+
+    int costEspresso = priceEspresso * qtyEspresso;
+    int costLatte = priceLatte * qtyLatte;
+    int costCappuccino = priceCappuccino * qtyCappuccino;
+
+    int total = costEspresso + costLatte + costCappuccino;
+
+    cout << "\n----- Your Cafe Bill -----\n";
+    cout << "Espresso (" << qtyEspresso << " x " << priceEspresso << ") = " << costEspresso << "\n";
+    cout << "Latte (" << qtyLatte << " x " << priceLatte << ") = " << costLatte << "\n";
+    cout << "Cappuccino (" << qtyCappuccino << " x " << priceCappuccino << ") = " << costCappuccino << "\n";
+    cout << "--------------------------\n";
+    cout << "TOTAL: " << total << "\n";
+
+    return 0;
+}
